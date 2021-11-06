@@ -6,9 +6,12 @@ from imageai.Detection import ObjectDetection as od
 import numpy as np
 import requests as req
 import xml.etree.ElementTree as et
+from dotenv import load_dotenv, find_dotenv
 
 
 def main():
+    load_dotenv(find_dotenv())
+
     image_list = load_images()
     pole_coordinates = get_pole_coords()
     transformer_coordinates = get_transformer_coords()
@@ -16,7 +19,7 @@ def main():
 
 def load_images():
     image_list = []
-    my_path = r'C:\Users\Michael Stiffler\Desktop\HackOHIO\images\*.JPG'
+    my_path = os.getenv("path_to_images")
     for filename in glob.glob(my_path):
         im = Image.open(filename)
         image_list.append(im)
@@ -24,7 +27,7 @@ def load_images():
 
 
 def get_pole_coords():
-    my_path = r'C:\Users\Michael Stiffler\Desktop\HackOHIO\images\Poles.kml'
+    my_path = os.getenv("path_to_poles_kml")
     doc = et.parse(my_path)
     nmsp = '{http://earth.google.com/kml/2.1}'
 
@@ -36,7 +39,7 @@ def get_pole_coords():
 
 
 def get_transformer_coords():
-    my_path = r'C:\Users\Michael Stiffler\Desktop\HackOHIO\images\Transformers.kml'
+    my_path = os.getenv("path_to_transformers_kml")
     pass
 
 
