@@ -3,9 +3,12 @@ from PIL import Image
 import glob
 import cv2 as cv
 
+from pykml import parser
+import pandas as pd
 from imageai.Classification import ImageClassification as ic
 from imageai.Detection import ObjectDetection as od
 from imageai.Classification.Custom import ClassificationModelTrainer
+import jinja2
 import numpy as np
 import requests as req
 import xml.etree.ElementTree as et
@@ -24,13 +27,21 @@ def main():
     
     my_path = os.getenv("path_to_image_folder")
     
-    model_trainer = ClassificationModelTrainer()
-    model_trainer.setModelTypeAsResNet50()
-    model_trainer.setDataDirectory(my_path, "Training", "Testing")
-    model_trainer.trainModel(num_objects=1, num_experiments=1)
-    
-    
+    pole_data = get_kml_data(pole_kml)
+    dump(pole_data)
 
+    
+    
+    #model_trainer = ClassificationModelTrainer()
+    #model_trainer.setModelTypeAsResNet50()
+    #model_trainer.setDataDirectory(my_path, "Training", "Testing")
+    #model_trainer.trainModel(num_objects=1, num_experiments=1)
+    
+    
+def dump(obj):
+   for attr in dir(obj):
+       if hasattr( obj, attr ):
+           print( "obj.%s = %s" % (attr, getattr(obj, attr)))
 
 def load_images():
     image_list = []
@@ -57,6 +68,32 @@ def get_transformer_kml():
     my_path = os.getenv("path_to_transformers_kml")
     pass
 
+def get_kml_data(x):
+    my_path = os.getenv("path_to_poles_kml")
+    with open(my_path) as f:
+        folder = parser.parse(f).getroot().Document.Folder
+
+    plnm=[]
+    cordi=[]
+    for pm in folder.Placemark:
+        plnm1=pm.name
+        plcs1=pm.Point.coordinates
+        plnm.append(plnm1.text)
+        cordi.append(plcs1.text)
+        
+    kml_data=pd.DataFrame()
+    kml_data['place_name']=plnm
+    kml_data['cordinates']=cordi
+
+    def dump(obj):
+        for attr in dir(obj):
+            if hasattr( obj, attr ):
+                print( "obj.%s = %s" % (attr, getattr(obj, attr)))
+
+    kml_data['Longitude'], kml_data['Latitude'],kml_data['value'] = zip(*kml_data['cordinates'].apply(lambda x: x.split(',', 2)))
+
+    kml_data
+    return kml_data
 
 if __name__ == "__main__":
     main()
