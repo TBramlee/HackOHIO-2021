@@ -2,6 +2,7 @@ import os
 from PIL import Image
 import glob
 import cv2 as cv
+from imageai.Classification import ImageClassification as ic
 from imageai.Detection import ObjectDetection as od
 import numpy as np
 import requests as req
@@ -15,6 +16,10 @@ def main():
     image_list = load_images()
     pole_kml = get_pole_kml()
     transformer_kml = get_transformer_kml()
+    
+    prediction = ic()
+    detection = od()
+    
 
 
 def load_images():
