@@ -30,7 +30,7 @@ def main():
     trainer = DetectionModelTrainer()
     trainer.setModelTypeAsYOLOv3()
     trainer.setDataDirectory(data_directory=my_path)
-    trainer.setTrainConfig(object_names_array=["Poles"], batch_size=4, num_experiments=200, train_from_pretrained_model="pretrained-yolov3.h5")
+    trainer.setTrainConfig(object_names_array=["poles"], batch_size=4, num_experiments=200, train_from_pretrained_model="pretrained-yolov3.h5")
     trainer.trainModel()
     
     """
