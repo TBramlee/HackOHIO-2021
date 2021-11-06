@@ -1,0 +1,38 @@
+<annotation>
+	<folder>images</folder>
+	<filename>High winds damage utility poles on 68 _ Peak.jpg</filename>
+	<path>C:\Users\tbtwi\OneDrive\Desktop\DataSet\train\images\High winds damage utility poles on 68 _ Peak.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>474</width>
+		<height>316</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>pole</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>403</xmin>
+			<ymin>2</ymin>
+			<xmax>456</xmax>
+			<ymax>316</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>pole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>200</xmin>
+			<ymin>101</ymin>
+			<xmax>319</xmax>
+			<ymax>290</ymax>
+		</bndbox>
+	</object>
+</annotation>

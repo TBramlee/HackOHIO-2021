@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>New utility poles going up around region_ old_yythk....jpg</filename>
+	<path>C:\Users\tbtwi\OneDrive\Desktop\DataSet\train\images\New utility poles going up around region_ old_yythk....jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>474</width>
+		<height>631</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>pole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>224</xmin>
+			<ymin>44</ymin>
+			<xmax>351</xmax>
+			<ymax>565</ymax>
+		</bndbox>
+	</object>
+</annotation>

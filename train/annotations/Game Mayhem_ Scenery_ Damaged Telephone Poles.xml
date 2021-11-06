@@ -1,0 +1,38 @@
+<annotation>
+	<folder>images</folder>
+	<filename>Game Mayhem_ Scenery_ Damaged Telephone Poles.jpg</filename>
+	<path>C:\Users\tbtwi\OneDrive\Desktop\DataSet\train\images\Game Mayhem_ Scenery_ Damaged Telephone Poles.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>474</width>
+		<height>355</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>pole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>174</xmin>
+			<ymin>91</ymin>
+			<xmax>264</xmax>
+			<ymax>299</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>pole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>263</xmin>
+			<ymin>100</ymin>
+			<xmax>349</xmax>
+			<ymax>285</ymax>
+		</bndbox>
+	</object>
+</annotation>

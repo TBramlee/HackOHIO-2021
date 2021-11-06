@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>Damaged Telephone Poles stock image. Image of ....jpg</filename>
+	<path>C:\Users\tbtwi\OneDrive\Desktop\DataSet\train\images\Damaged Telephone Poles stock image. Image of ....jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>474</width>
+		<height>711</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>pole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>100</xmin>
+			<ymin>63</ymin>
+			<xmax>383</xmax>
+			<ymax>636</ymax>
+		</bndbox>
+	</object>
+</annotation>

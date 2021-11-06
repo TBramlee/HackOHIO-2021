@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>Brush fire threatens homes_ damages telephone poles_yythkg....jpg</filename>
+	<path>C:\Users\tbtwi\OneDrive\Desktop\DataSet\train\images\Brush fire threatens homes_ damages telephone poles_yythkg....jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>474</width>
+		<height>316</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>pole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2</xmin>
+			<ymin>72</ymin>
+			<xmax>424</xmax>
+			<ymax>165</ymax>
+		</bndbox>
+	</object>
+</annotation>

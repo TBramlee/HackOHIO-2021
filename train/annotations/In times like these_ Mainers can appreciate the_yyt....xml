@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>In times like these_ Mainers can appreciate the_yyt....jpg</filename>
+	<path>C:\Users\tbtwi\OneDrive\Desktop\DataSet\train\images\In times like these_ Mainers can appreciate the_yyt....jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>474</width>
+		<height>300</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>pole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>198</xmin>
+			<ymin>43</ymin>
+			<xmax>448</xmax>
+			<ymax>73</ymax>
+		</bndbox>
+	</object>
+</annotation>

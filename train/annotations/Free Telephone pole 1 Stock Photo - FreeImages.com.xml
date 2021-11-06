@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>Free Telephone pole 1 Stock Photo - FreeImages.com.jpg</filename>
+	<path>C:\Users\tbtwi\OneDrive\Desktop\DataSet\train\images\Free Telephone pole 1 Stock Photo - FreeImages.com.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>474</width>
+		<height>632</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>pole</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>175</xmin>
+			<ymin>229</ymin>
+			<xmax>334</xmax>
+			<ymax>632</ymax>
+		</bndbox>
+	</object>
+</annotation>

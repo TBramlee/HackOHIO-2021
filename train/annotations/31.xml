@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>31.jpg</filename>
+	<path>C:\Users\tbtwi\OneDrive\Desktop\DataSet\train\images\31.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>474</width>
+		<height>842</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>pole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>145</xmin>
+			<ymin>99</ymin>
+			<xmax>333</xmax>
+			<ymax>424</ymax>
+		</bndbox>
+	</object>
+</annotation>

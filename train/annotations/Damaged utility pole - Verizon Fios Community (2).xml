@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>Damaged utility pole - Verizon Fios Community (2).jpg</filename>
+	<path>C:\Users\tbtwi\OneDrive\Desktop\DataSet\train\images\Damaged utility pole - Verizon Fios Community (2).jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>474</width>
+		<height>355</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>pole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>26</xmin>
+			<ymin>134</ymin>
+			<xmax>392</xmax>
+			<ymax>250</ymax>
+		</bndbox>
+	</object>
+</annotation>

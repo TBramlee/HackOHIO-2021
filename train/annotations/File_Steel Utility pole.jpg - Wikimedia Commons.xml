@@ -1,0 +1,38 @@
+<annotation>
+	<folder>images</folder>
+	<filename>File_Steel Utility pole.jpg - Wikimedia Commons.jpg</filename>
+	<path>C:\Users\tbtwi\OneDrive\Desktop\DataSet\train\images\File_Steel Utility pole.jpg - Wikimedia Commons.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>416</width>
+		<height>1000</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>pole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>66</xmin>
+			<ymin>79</ymin>
+			<xmax>332</xmax>
+			<ymax>964</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>pole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>75</xmin>
+			<ymin>526</ymin>
+			<xmax>190</xmax>
+			<ymax>882</ymax>
+		</bndbox>
+	</object>
+</annotation>

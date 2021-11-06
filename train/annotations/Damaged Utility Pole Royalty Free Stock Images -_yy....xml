@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>Damaged Utility Pole Royalty Free Stock Images -_yy....jpg</filename>
+	<path>C:\Users\tbtwi\OneDrive\Desktop\DataSet\train\images\Damaged Utility Pole Royalty Free Stock Images -_yy....jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>474</width>
+		<height>643</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>pole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>3</xmin>
+			<ymin>2</ymin>
+			<xmax>428</xmax>
+			<ymax>641</ymax>
+		</bndbox>
+	</object>
+</annotation>

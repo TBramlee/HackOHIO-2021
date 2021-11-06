@@ -1,0 +1,38 @@
+<annotation>
+	<folder>images</folder>
+	<filename>Broken telegraph pole Stock Photo_ 15485438 - Alamy.jpg</filename>
+	<path>C:\Users\tbtwi\OneDrive\Desktop\DataSet\train\images\Broken telegraph pole Stock Photo_ 15485438 - Alamy.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>474</width>
+		<height>687</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>pole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>126</xmin>
+			<ymin>137</ymin>
+			<xmax>320</xmax>
+			<ymax>553</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>pole</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>338</xmin>
+			<ymin>1</ymin>
+			<xmax>458</xmax>
+			<ymax>649</ymax>
+		</bndbox>
+	</object>
+</annotation>
