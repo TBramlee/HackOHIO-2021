@@ -2,8 +2,10 @@ import os
 from PIL import Image
 import glob
 import cv2 as cv
+
 from imageai.Classification import ImageClassification as ic
 from imageai.Detection import ObjectDetection as od
+from imageai.Classification.Custom import ClassificationModelTrainer
 import numpy as np
 import requests as req
 import xml.etree.ElementTree as et
@@ -19,6 +21,14 @@ def main():
     
     prediction = ic()
     detection = od()
+    
+    my_path = os.getenv("path_to_image_folder")
+    
+    model_trainer = ClassificationModelTrainer()
+    model_trainer.setModelTypeAsResNet50()
+    model_trainer.setDataDirectory(my_path, "Training", "Testing")
+    model_trainer.trainModel(num_objects=1, num_experiments=1)
+    
     
 
 
