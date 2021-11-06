@@ -26,11 +26,11 @@ def main():
     # prediction = ic()
     # detection = od()
 
-    my_path = os.getenv("path_to_images")
+    my_path = os.getenv("path_to_image_folder")
 
     trainer = DetectionModelTrainer()
     trainer.setModelTypeAsYOLOv3()
-    trainer.setDataDirectory(data_directory=my_path)
+    trainer.setDataDirectory(data_directory="poles")
     trainer.setTrainConfig(object_names_array=[
                            "poles"], batch_size=4, num_experiments=200, train_from_pretrained_model="pretrained-yolov3.h5")
     trainer.trainModel()
