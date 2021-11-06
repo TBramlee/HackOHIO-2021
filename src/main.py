@@ -27,10 +27,16 @@ def main():
     
     my_path = os.getenv("path_to_image_folder")
     
-    pole_data = get_kml_data(pole_kml)
+    pole_data = get_kml_data("p")
     pole_str = pole_data.to_string()
     f = open("poledata.txt", "a")
     f.write(pole_str)
+    f.close()
+    
+    tran_data = get_kml_data("t")
+    tran_str = tran_data.to_string()
+    f = open("transdata.txt", "a")
+    f.write(tran_str)
     f.close()
     
     
@@ -66,7 +72,10 @@ def get_transformer_kml():
     pass
 
 def get_kml_data(x):
-    my_path = os.getenv("path_to_poles_kml")
+    if x =='p':
+        my_path = os.getenv("path_to_poles_kml")
+    else:
+        my_path = os.getenv("path_to_transformers_kml")
     with open(my_path) as f:
         folder = parser.parse(f).getroot().Document.Folder
 
@@ -81,10 +90,7 @@ def get_kml_data(x):
     kml_data=pd.DataFrame()
     kml_data['place_name']=plnm
     kml_data['cordinates']=cordi
-
-
     kml_data['Longitude'], kml_data['Latitude'],kml_data['value'] = zip(*kml_data['cordinates'].apply(lambda x: x.split(',', 2)))
-
     kml_data
     return kml_data
 
