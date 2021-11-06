@@ -2,6 +2,7 @@ import os
 from PIL import Image
 import glob
 import cv2 as cv
+from imageai.Classification import ImageClassification as ic
 from imageai.Detection import ObjectDetection as od
 import numpy as np
 import requests as req
@@ -13,8 +14,12 @@ def main():
     load_dotenv(find_dotenv())
 
     image_list = load_images()
-    pole_coordinates = get_pole_coords()
-    transformer_coordinates = get_transformer_coords()
+    pole_kml = get_pole_kml()
+    transformer_kml = get_transformer_kml()
+    
+    prediction = ic()
+    detection = od()
+    
 
 
 def load_images():
@@ -26,7 +31,7 @@ def load_images():
     return image_list
 
 
-def get_pole_coords():
+def get_pole_kml():
     my_path = os.getenv("path_to_poles_kml")
     doc = et.parse(my_path)
     nmsp = '{http://earth.google.com/kml/2.1}'
@@ -38,7 +43,7 @@ def get_pole_coords():
             print(ls.text.strip().replace('\n', ''))
 
 
-def get_transformer_coords():
+def get_transformer_kml():
     my_path = os.getenv("path_to_transformers_kml")
     pass
 
