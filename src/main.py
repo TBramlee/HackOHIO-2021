@@ -44,6 +44,19 @@ def main():
     """
 
 
+def renameImages():
+    
+    poles_path = "C:\Repos\HackOHIO-2021\poles\/train\images\*.jpg" 
+    counter = 1
+    for filename in glob.glob(poles_path):
+        string = poles_path + "img_" + counter + ".jpg"
+        print(string)
+        counter+=1
+        os.rename(filename, string)
+    
+    
+    pass
+
 def load_images():
     image_list = []
     my_path = os.getenv("path_to_images")
