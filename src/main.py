@@ -5,7 +5,10 @@ import cv2 as cv
 
 from imageai.Classification import ImageClassification as ic
 from imageai.Detection import ObjectDetection as od
+
 from imageai.Classification.Custom import ClassificationModelTrainer
+from imageai.Detection.Custom import DetectionModelTrainer
+
 import numpy as np
 import requests as req
 import xml.etree.ElementTree as et
@@ -19,16 +22,23 @@ def main():
     pole_kml = get_pole_kml()
     transformer_kml = get_transformer_kml()
     
-    prediction = ic()
-    detection = od()
+    #prediction = ic()
+    #detection = od()
     
     my_path = os.getenv("path_to_image_folder")
     
+    trainer = DetectionModelTrainer()
+    trainer.setModelTypeAsYOLOv3()
+    trainer.setDataDirectory(data_directory=my_path)
+    trainer.setTrainConfig(object_names_array=["Poles"], batch_size=4, num_experiments=200, train_from_pretrained_model="pretrained-yolov3.h5")
+    trainer.trainModel()
+    
+    """
     model_trainer = ClassificationModelTrainer()
     model_trainer.setModelTypeAsResNet50()
     model_trainer.setDataDirectory(my_path)
-    model_trainer.trainModel(num_objects=1, num_experiments=10, enhance_data=True, batch_size=32, show_network_summary=True)
-    
+    model_trainer.trainModel(num_objects=10, num_experiments=100, enhance_data=True, batch_size=32, show_network_summary=True)
+    """
     
 
 
