@@ -1,0 +1,50 @@
+<annotation>
+	<folder>TS1</folder>
+	<filename>Utility Pole Materials_ Which Is Best_ _ Polesaver (1).jpg</filename>
+	<path>C:\Users\Michael Stiffler\Documents\GitHub\HackOHI-O-2021\img\TS1\Utility Pole Materials_ Which Is Best_ _ Polesaver (1).jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>474</width>
+		<height>711</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>pole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>128</xmin>
+			<ymin>43</ymin>
+			<xmax>303</xmax>
+			<ymax>663</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>pole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>269</xmin>
+			<ymin>377</ymin>
+			<xmax>361</xmax>
+			<ymax>657</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>pole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>305</xmin>
+			<ymin>440</ymin>
+			<xmax>372</xmax>
+			<ymax>653</ymax>
+		</bndbox>
+	</object>
+</annotation>

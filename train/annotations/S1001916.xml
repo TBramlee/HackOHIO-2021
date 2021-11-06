@@ -1,13 +1,13 @@
 <annotation>
 	<folder>TS1</folder>
-	<filename>New utility poles going up around region_ old_yythk....jpg</filename>
-	<path>C:\Users\Michael Stiffler\Documents\GitHub\HackOHI-O-2021\img\TS1\New utility poles going up around region_ old_yythk....jpg</path>
+	<filename>S1001916.jpg</filename>
+	<path>C:\Users\Michael Stiffler\Documents\GitHub\HackOHI-O-2021\img\TS1\S1001916.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
 	<size>
-		<width>474</width>
-		<height>631</height>
+		<width>1045</width>
+		<height>1288</height>
 		<depth>3</depth>
 	</size>
 	<segmented>0</segmented>
@@ -18,9 +18,9 @@
 		<difficult>0</difficult>
 		<bndbox>
 			<xmin>223</xmin>
-			<ymin>30</ymin>
-			<xmax>407</xmax>
-			<ymax>557</ymax>
+			<ymin>273</ymin>
+			<xmax>805</xmax>
+			<ymax>1071</ymax>
 		</bndbox>
 	</object>
 </annotation>

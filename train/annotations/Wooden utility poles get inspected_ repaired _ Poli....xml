@@ -1,7 +1,7 @@
 <annotation>
 	<folder>TS1</folder>
-	<filename>New composite utility poles in southeast MO expecte....jpg</filename>
-	<path>C:\Users\Michael Stiffler\Documents\GitHub\HackOHI-O-2021\img\TS1\New composite utility poles in southeast MO expecte....jpg</path>
+	<filename>Wooden utility poles get inspected_ repaired _ Poli....jpg</filename>
+	<path>C:\Users\Michael Stiffler\Documents\GitHub\HackOHI-O-2021\img\TS1\Wooden utility poles get inspected_ repaired _ Poli....jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -17,10 +17,10 @@
 		<truncated>1</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>167</xmin>
-			<ymin>15</ymin>
-			<xmax>335</xmax>
-			<ymax>632</ymax>
+			<xmin>168</xmin>
+			<ymin>1</ymin>
+			<xmax>251</xmax>
+			<ymax>524</ymax>
 		</bndbox>
 	</object>
 </annotation>

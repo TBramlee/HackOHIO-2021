@@ -1,0 +1,26 @@
+<annotation>
+	<folder>TS1</folder>
+	<filename>Royalty Free Damaged Utility Poles Pictures_ Images_yythkg....jpg</filename>
+	<path>C:\Users\Michael Stiffler\Documents\GitHub\HackOHI-O-2021\img\TS1\Royalty Free Damaged Utility Poles Pictures_ Images_yythkg....jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>474</width>
+		<height>314</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>pole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>13</xmin>
+			<ymin>4</ymin>
+			<xmax>472</xmax>
+			<ymax>244</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>TS1</folder>
+	<filename>Screenshot 2021-11-06 144731.jpg</filename>
+	<path>C:\Users\Michael Stiffler\Documents\GitHub\HackOHI-O-2021\img\TS1\Screenshot 2021-11-06 144731.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>289</width>
+		<height>324</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>pole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>114</xmin>
+			<ymin>69</ymin>
+			<xmax>161</xmax>
+			<ymax>258</ymax>
+		</bndbox>
+	</object>
+</annotation>

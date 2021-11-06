@@ -1,0 +1,38 @@
+<annotation>
+	<folder>TS1</folder>
+	<filename>Telephone pole hit with over _20_000 in damage__yyt....jpg</filename>
+	<path>C:\Users\Michael Stiffler\Documents\GitHub\HackOHI-O-2021\img\TS1\Telephone pole hit with over _20_000 in damage__yyt....jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>474</width>
+		<height>266</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>pole</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>184</xmin>
+			<ymin>1</ymin>
+			<xmax>242</xmax>
+			<ymax>198</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>pole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>227</xmin>
+			<ymin>3</ymin>
+			<xmax>314</xmax>
+			<ymax>210</ymax>
+		</bndbox>
+	</object>
+</annotation>

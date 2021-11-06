@@ -1,7 +1,7 @@
 <annotation>
 	<folder>TS1</folder>
-	<filename>Office damaged at Port of Greater Baton Rouge_yythk....jpg</filename>
-	<path>C:\Users\Michael Stiffler\Documents\GitHub\HackOHI-O-2021\img\TS1\Office damaged at Port of Greater Baton Rouge_yythk....jpg</path>
+	<filename>Six Quick Lessons in How to Read a Landscape.jpg</filename>
+	<path>C:\Users\Michael Stiffler\Documents\GitHub\HackOHI-O-2021\img\TS1\Six Quick Lessons in How to Read a Landscape.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -17,10 +17,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>179</xmin>
-			<ymin>111</ymin>
-			<xmax>364</xmax>
-			<ymax>377</ymax>
+			<xmin>106</xmin>
+			<ymin>15</ymin>
+			<xmax>396</xmax>
+			<ymax>628</ymax>
 		</bndbox>
 	</object>
 </annotation>

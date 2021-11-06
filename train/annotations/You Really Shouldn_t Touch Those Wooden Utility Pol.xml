@@ -1,13 +1,13 @@
 <annotation>
 	<folder>TS1</folder>
-	<filename>Office damaged at Port of Greater Baton Rouge_yythk....jpg</filename>
-	<path>C:\Users\Michael Stiffler\Documents\GitHub\HackOHI-O-2021\img\TS1\Office damaged at Port of Greater Baton Rouge_yythk....jpg</path>
+	<filename>You Really Shouldn_t Touch Those Wooden Utility Pol.jpg</filename>
+	<path>C:\Users\Michael Stiffler\Documents\GitHub\HackOHI-O-2021\img\TS1\You Really Shouldn_t Touch Those Wooden Utility Pol.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
 	<size>
 		<width>474</width>
-		<height>632</height>
+		<height>316</height>
 		<depth>3</depth>
 	</size>
 	<segmented>0</segmented>
@@ -17,10 +17,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>179</xmin>
-			<ymin>111</ymin>
-			<xmax>364</xmax>
-			<ymax>377</ymax>
+			<xmin>146</xmin>
+			<ymin>20</ymin>
+			<xmax>226</xmax>
+			<ymax>313</ymax>
 		</bndbox>
 	</object>
 </annotation>

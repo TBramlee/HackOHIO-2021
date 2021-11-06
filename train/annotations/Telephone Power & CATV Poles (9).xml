@@ -1,13 +1,13 @@
 <annotation>
 	<folder>TS1</folder>
-	<filename>New composite utility poles in southeast MO expecte....jpg</filename>
-	<path>C:\Users\Michael Stiffler\Documents\GitHub\HackOHI-O-2021\img\TS1\New composite utility poles in southeast MO expecte....jpg</path>
+	<filename>Telephone Power &amp; CATV Poles (9).jpg</filename>
+	<path>C:\Users\Michael Stiffler\Documents\GitHub\HackOHI-O-2021\img\TS1\Telephone Power &amp; CATV Poles (9).jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
 	<size>
 		<width>474</width>
-		<height>632</height>
+		<height>299</height>
 		<depth>3</depth>
 	</size>
 	<segmented>0</segmented>
@@ -17,10 +17,10 @@
 		<truncated>1</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>167</xmin>
-			<ymin>15</ymin>
-			<xmax>335</xmax>
-			<ymax>632</ymax>
+			<xmin>205</xmin>
+			<ymin>5</ymin>
+			<xmax>399</xmax>
+			<ymax>299</ymax>
 		</bndbox>
 	</object>
 </annotation>
