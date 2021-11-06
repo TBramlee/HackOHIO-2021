@@ -1,4 +1,5 @@
 import os
+import sys
 from PIL import Image
 import glob
 import cv2 as cv
@@ -18,28 +19,29 @@ from dotenv import load_dotenv, find_dotenv
 def main():
     load_dotenv(find_dotenv())
 
-    image_list = load_images()
-    pole_kml = get_pole_kml()
-    transformer_kml = get_transformer_kml()
-    
-    #prediction = ic()
-    #detection = od()
-    
-    my_path = os.getenv("path_to_image_folder")
-    
+    #image_list = load_images()
+    #pole_kml = get_pole_kml()
+    #transformer_kml = get_transformer_kml()
+
+    # prediction = ic()
+    # detection = od()
+
+    my_path = os.getenv("path_to_images")
+
     trainer = DetectionModelTrainer()
     trainer.setModelTypeAsYOLOv3()
     trainer.setDataDirectory(data_directory=my_path)
-    trainer.setTrainConfig(object_names_array=["poles"], batch_size=4, num_experiments=200, train_from_pretrained_model="pretrained-yolov3.h5")
+    trainer.setTrainConfig(object_names_array=[
+                           "poles"], batch_size=4, num_experiments=200, train_from_pretrained_model="pretrained-yolov3.h5")
     trainer.trainModel()
-    
+
     """
     model_trainer = ClassificationModelTrainer()
     model_trainer.setModelTypeAsResNet50()
     model_trainer.setDataDirectory(my_path)
-    model_trainer.trainModel(num_objects=10, num_experiments=100, enhance_data=True, batch_size=32, show_network_summary=True)
+    model_trainer.trainModel(num_objects=10, num_experiments=100,
+                             enhance_data=True, batch_size=32, show_network_summary=True)
     """
-    
 
 
 def load_images():
