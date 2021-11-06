@@ -5,7 +5,6 @@ import cv2 as cv
 from imageai.Detection import ObjectDetection as od
 import numpy as np
 import requests as req
-import os as os
 import xml.etree.ElementTree as et
 
 
@@ -26,8 +25,7 @@ def load_images():
 
 def get_pole_coords():
     my_path = r'C:\Users\Michael Stiffler\Desktop\HackOHIO\images\Poles.kml'
-    doc = et.parse("kml/Poles.kml")
-    print(doc.__sizeof__())
+    doc = et.parse(my_path)
     nmsp = '{http://earth.google.com/kml/2.1}'
 
     for pm in doc.iterfind('.//{0}Placemark'.format(nmsp)):
