@@ -28,7 +28,10 @@ def main():
     my_path = os.getenv("path_to_image_folder")
     
     pole_data = get_kml_data(pole_kml)
-    print(pole_data)
+    pole_str = pole_data.to_string()
+    f = open("poledata.txt", "a")
+    f.write(pole_str)
+    f.close()
     
     
     #model_trainer = ClassificationModelTrainer()
