@@ -28,20 +28,14 @@ def main():
     my_path = os.getenv("path_to_image_folder")
     
     pole_data = get_kml_data(pole_kml)
-    dump(pole_data)
-
+    print(pole_data)
     
     
     #model_trainer = ClassificationModelTrainer()
     #model_trainer.setModelTypeAsResNet50()
     #model_trainer.setDataDirectory(my_path, "Training", "Testing")
     #model_trainer.trainModel(num_objects=1, num_experiments=1)
-    
-    
-def dump(obj):
-   for attr in dir(obj):
-       if hasattr( obj, attr ):
-           print( "obj.%s = %s" % (attr, getattr(obj, attr)))
+
 
 def load_images():
     image_list = []
@@ -85,10 +79,6 @@ def get_kml_data(x):
     kml_data['place_name']=plnm
     kml_data['cordinates']=cordi
 
-    def dump(obj):
-        for attr in dir(obj):
-            if hasattr( obj, attr ):
-                print( "obj.%s = %s" % (attr, getattr(obj, attr)))
 
     kml_data['Longitude'], kml_data['Latitude'],kml_data['value'] = zip(*kml_data['cordinates'].apply(lambda x: x.split(',', 2)))
 
