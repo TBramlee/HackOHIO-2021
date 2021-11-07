@@ -1,6 +1,6 @@
 <annotation>
-	<folder>images</folder>
-	<filename>Damaged utility pole causes power outage.jpg</filename>
+	<folder>annotations</folder>
+	<filename>img_96.jpg</filename>
 	<path>C:\Repos\HackOHIO-2021/poles/train/annotations/img_96.jpg</path>
 	<source>
 		<database>Unknown</database>

@@ -1,6 +1,6 @@
 <annotation>
-	<folder>TS1</folder>
-	<filename>Severe storms tear through the Eastern U.S. - The Eye.jpg</filename>
+	<folder>annotations</folder>
+	<filename>img_217.jpg</filename>
 	<path>C:\Repos\HackOHIO-2021/poles/train/annotations/img_217.jpg</path>
 	<source>
 		<database>Unknown</database>

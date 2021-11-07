@@ -1,6 +1,6 @@
 <annotation>
-	<folder>TS1</folder>
-	<filename>Telephone pole hit with over _20_000 in damage__yyt....jpg</filename>
+	<folder>annotations</folder>
+	<filename>img_230.jpg</filename>
 	<path>C:\Repos\HackOHIO-2021/poles/train/annotations/img_230.jpg</path>
 	<source>
 		<database>Unknown</database>
