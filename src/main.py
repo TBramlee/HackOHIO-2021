@@ -29,9 +29,10 @@ def main():
     my_path = os.getenv("path_to_images")
     cleanup()
     sys.exit(0)
+
     trainer = DetectionModelTrainer()
     trainer.setModelTypeAsYOLOv3()
-    trainer.setDataDirectory(data_directory=my_path)
+    trainer.setDataDirectory(data_directory="poles")
     trainer.setTrainConfig(object_names_array=[
                            "poles"], batch_size=4, num_experiments=200, train_from_pretrained_model="pretrained-yolov3.h5")
     trainer.trainModel()
@@ -45,6 +46,7 @@ def main():
     """
 
 
+<< << << < HEAD
 '''
 def cleanup():
     # my_path = r"{}".format(my_path_)
@@ -56,6 +58,24 @@ def cleanup():
         os.rename(new_filename, string)
         counter += 1
 '''
+
+== == == =
+
+
+def renameImages():
+
+    poles_path = "C:\Repos\HackOHIO-2021\poles\/train\images\*.jpg"
+    counter = 1
+    for filename in glob.glob(poles_path):
+        string = poles_path + "img_" + counter + ".jpg"
+        print(string)
+        counter += 1
+        os.rename(filename, string)
+
+    pass
+
+
+>>>>>> > c56ed899d5591d89288334c2eea64019f31f7811
 
 
 def load_images():
