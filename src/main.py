@@ -19,6 +19,8 @@ from dotenv import load_dotenv, find_dotenv
 def main():
     load_dotenv(find_dotenv())
 
+    cleanup()
+    sys.exit(0)
     # image_list = load_images()
     # pole_kml = get_pole_kml()
     # transformer_kml = get_transformer_kml()
@@ -46,17 +48,36 @@ def main():
 
 
 
-'''
+
 def cleanup():
     # my_path = r"{}".format(my_path_)
     my_path_ = os.getcwd() + "/poles" + "/train/annotations/"
     counter = 1
+    
     for filename in os.listdir(my_path_):
-        string = my_path_ + "img_" + str(counter) + ".xml"
-        new_filename = my_path_ + filename
-        os.rename(new_filename, string)
+        
+        fileNum = filename[4: len(filename) - 4]
+        
+        #(fileNum)
+        
+        #Full path of .jpg file
+        newHeader = my_path_ + "img_" + fileNum + ".jpg"
+        
+        #Full path of XML file
+        fullFilename = os.getcwd() + "/poles" + "/train/annotations/" + filename
+        
+        tree = et.parse(fullFilename)
+        root = tree.getroot()
+        #print(root[2].text)
+        root[2].text = newHeader
+        #print(root[2].text)
+        tree.write(fullFilename)
+        #used to convert names of .jpg and .xml
+        
+        #new_filename = my_path_ + filename
+        #os.rename(new_filename, string)
         counter += 1
-'''
+    
 
 
 def load_images():
