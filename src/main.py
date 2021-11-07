@@ -19,15 +19,16 @@ from dotenv import load_dotenv, find_dotenv
 def main():
     load_dotenv(find_dotenv())
 
-    #image_list = load_images()
-    #pole_kml = get_pole_kml()
-    #transformer_kml = get_transformer_kml()
+    # image_list = load_images()
+    # pole_kml = get_pole_kml()
+    # transformer_kml = get_transformer_kml()
 
     # prediction = ic()
     # detection = od()
 
     my_path = os.getenv("path_to_images")
-
+    cleanup()
+    sys.exit(0)
     trainer = DetectionModelTrainer()
     trainer.setModelTypeAsYOLOv3()
     trainer.setDataDirectory(data_directory=my_path)
@@ -42,6 +43,19 @@ def main():
     model_trainer.trainModel(num_objects=10, num_experiments=100,
                              enhance_data=True, batch_size=32, show_network_summary=True)
     """
+
+
+'''
+def cleanup():
+    # my_path = r"{}".format(my_path_)
+    my_path_ = os.getcwd() + "/poles" + "/train/annotations/"
+    counter = 1
+    for filename in os.listdir(my_path_):
+        string = my_path_ + "img_" + str(counter) + ".xml"
+        new_filename = my_path_ + filename
+        os.rename(new_filename, string)
+        counter += 1
+'''
 
 
 def load_images():
