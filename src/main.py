@@ -34,7 +34,7 @@ def main():
     trainer.setModelTypeAsYOLOv3()
     trainer.setDataDirectory(data_directory=my_path_)
     trainer.setTrainConfig(object_names_array=[
-                           "pole"], batch_size=4, num_experiments=200, train_from_pretrained_model="pretrained-yolov3.h5")
+                           "pole"], batch_size=4, num_experiments=1, train_from_pretrained_model="pretrained-yolov3.h5")
     trainer.trainModel()
 
     """
